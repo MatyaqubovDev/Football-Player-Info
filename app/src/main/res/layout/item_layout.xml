@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_player"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="100dp"
+            android:text="TITLE"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_player"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_player"
+            app:layout_constraintTop_toTopOf="@id/img_player" />
+
+        <ImageView
+            android:id="@+id/img_down_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_down"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_expandable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/img_down_up"
+            app:layout_constraintStart_toStartOf="@id/img_player"
+            app:layout_constraintTop_toBottomOf="@id/img_player">
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdbgnjkdsbngjkdbsnfjbsdjgkndskjkjdfsngkjsdnfkjgnsdfjkgnjkdfnsgjkdfnjgknsdfjgnjdfsngkjdfsngjsdfn gkjsdfn gjkndsf kjgn dsfkjgn skdfj gkjdf sjgkjdfsn gknsdfkjgnsdfjgkjjdfbgjsdfngkjdsfgkjnsdfgkjnsdfkjgdfskjdsfgkjsndfkjgnskkjfdngkjdfbsngkbsdnfjgknbsdjk"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_read_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="read more" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
