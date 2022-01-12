@@ -40,9 +40,8 @@ class MainRecyclerViewAdapter(private  val players:ArrayList<Player>)
         }
     }
 
-    override fun getItemCount(): Int {
-        return  players.size
-    }
+    override fun getItemCount()=players.size
+
 
     inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val playerImage=view.findViewById<ImageView>(R.id.img_player)
